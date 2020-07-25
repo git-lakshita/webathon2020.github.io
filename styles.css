@@ -105,6 +105,7 @@ button:active {
 
 .modal-content > p {
     color: green;
+    font-weight: bold;
 }
 
 /* The Close Button */

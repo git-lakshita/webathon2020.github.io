@@ -3,23 +3,22 @@
 
     <head>
         <title>Registeration Form</title>
-        
-        <!-- Normalize.css -->
+
         <link rel="stylesheet" type="text/css" href="normalize.css">
         
-        <!-- Custom Styles -->
+ 
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script><!--jquery cdn-->
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     </head>
     
     <body>
         
         <div id="container">
-            <h1>Registeration Form</h1>
+            <h1>Registration Form</h1>
             
             <div id="calculator">
                 
-                <form>
+                <form name="myForm">
                     <div class="row">
                         <div class="col-25"><label>Username<r>*</r>:</label></div>
                         <div class="col-75"><input type="text" id="username" placeholder="Username" required></div>
@@ -44,46 +43,20 @@
                 </form>
             </div>
             
-            <!-- The Modal -->
+
             <div id="myModal" class="modal">
-                <!-- Modal content -->
+             
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>Registeration Succesful</p>
+                    <p>Registration Succesful</p>
                 </div>
             </div>
             
             
-        </div><!-- container -->
-        
-        <!--        Javascript Links-->
-<!--        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>-->
-<!--
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
--->
+        </div>
+
         <script type="text/javascript" src="script.js"></script>
-<!--
-            <script type="text/javascript">//<![CDATA[
 
-
-$('#username, #password, #mobile, #address, #email').bind('keyup', function() {
-    if(allFilled()) $('#myBtn').removeAttr('disabled');
-    
-});
-
-function allFilled() {
-    var filled = true;
-    $('body input').each(function() {
-        if($(this).val() == '') filled = false;
-    });
-    return filled;
-}
-
-
-  //]]></script>
--->
-        
     </body>
     
 </html>
