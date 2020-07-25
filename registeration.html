@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Registeration Form</title>
+        
+        <!-- Normalize.css -->
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        
+        <!-- Custom Styles -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script><!--jquery cdn-->
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            <h1>Registeration Form</h1>
+            
+            <div id="calculator">
+                
+                <form>
+                    <div class="row">
+                        <div class="col-25"><label>Username<r>*</r>:</label></div>
+                        <div class="col-75"><input type="text" id="username" placeholder="Username" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"><label>E-mail<r>*</r>:</label></div>
+                        <div class="col-75"><input type="email" id="email" placeholder="E-mail" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"><label>Password<r>*</r>:</label></div>
+                        <div class="col-75"><input type="password" id="password" placeholder="Password" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"><label>Mobile<r>*</r>:</label></div>
+                        <div class="col-75"><input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"><label>Address<r>*</r>:</label></div>
+                        <div class="col-75"><input type="text" id="address" placeholder="Address" required></div>
+                    </div>
+                    <button type="submit" id="myBtn">Submit</button>
+                </form>
+            </div>
+            
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Registeration Succesful</p>
+                </div>
+            </div>
+            
+            
+        </div><!-- container -->
+        
+        <!--        Javascript Links-->
+<!--        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>-->
+<!--
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+-->
+        <script type="text/javascript" src="script.js"></script>
+<!--
+            <script type="text/javascript">//<![CDATA[
+
+
+$('#username, #password, #mobile, #address, #email').bind('keyup', function() {
+    if(allFilled()) $('#myBtn').removeAttr('disabled');
+    
+});
+
+function allFilled() {
+    var filled = true;
+    $('body input').each(function() {
+        if($(this).val() == '') filled = false;
+    });
+    return filled;
+}
+
+
+  //]]></script>
+-->
+        
+    </body>
+    
+</html>
+

@@ -1,0 +1,123 @@
+body {
+    background: url('img/bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#container {
+    width: 450px;
+    margin: 40px auto 40px;
+    padding: 50px;
+    box-sizing: border-box;
+    background: url('img/paper-pattern.jpg') top left repeat;
+    opacity: 75%;
+    box-shadow: 0 10px 15px -8px #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#container:hover {
+    opacity: inherit;
+}
+
+h1 {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #ddd;
+}
+
+form input,
+form select {
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    background: #6c2726;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-bottom: solid 4px #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+button:hover {
+    background: #4c2827;
+    border-bottom-color: #111;
+    cursor: pointer;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+.col-25 {
+    text-align: left;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    font-weight: bold;
+    padding: 20px 0 0 0;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.col-25 >label>r {
+    color: red;
+}
+
+
+
+/*POPOUT BOX*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+}
+
+.modal-content > p {
+    color: green;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
