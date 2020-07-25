@@ -75,6 +75,11 @@ button:active {
     color: red;
 }
 
+#myForm >r {
+    color: red;
+    text-align: left;
+    font: bold;
+}
 
 
 /*POPOUT BOX*/
