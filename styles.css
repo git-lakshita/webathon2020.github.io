@@ -39,7 +39,7 @@ form select {
 
 button {
     background: #6c2726;
-    color: white;
+    color: #fff;
     border: none;
     margin-top: 20px;
     border-bottom: solid 4px #222;
@@ -76,19 +76,15 @@ button:active {
 }
 
 .col-25 >label>r {
-    color: red;
+    color: #f00;
 }
 
 #myForm >r {
-    color: red;
+    color: #f00;
     text-align: left;
     font: bold;
 }
 
-
-/*POPOUT BOX*/
-
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -113,7 +109,7 @@ button:active {
 }
 
 .modal-content > p {
-    color: green;
+    color: #0f0;
     font-weight: bold;
 }
 
